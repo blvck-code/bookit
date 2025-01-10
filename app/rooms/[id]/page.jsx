@@ -7,6 +7,7 @@ import BookingForm from "@/components/BookingForm";
 
 
 const RoomPage = ({ params }) => {
+    console.log('params ==>>', params)
 
     const { id } = params;
     const room = rooms.find((room) => room.$id === id);
