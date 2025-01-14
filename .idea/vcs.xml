@@ -3,14 +3,5 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../docker-engine/tabaka-hos" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../email-template" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../fixgit/local gitlab" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../fixgit/naiparq-web-portal" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../loita-web" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../naiparq-frontend-pms" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../naiparq-web-portal" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../oona-v2-frontend" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../peapay-web" vcs="Git" />
   </component>
 </project>

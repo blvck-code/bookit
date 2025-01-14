@@ -5,7 +5,7 @@ import getAllRooms from "@/app/actions/getAllRooms";
 
 export default async function Home() {
     const rooms = await getAllRooms();
-
+    console.log('Rooms ==>>', rooms)
   return (
       <>
           <Heading title={'Available rooms'} />
