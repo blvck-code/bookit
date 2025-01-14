@@ -72,7 +72,7 @@ const Header = () => {
                         Rooms
                     </Link>
                     <Link
-                        href="/bookings.html"
+                        href="/bookings"
                         className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
                     >
                         Bookings
