@@ -1,6 +1,9 @@
 'use server';
 
-async function createSession(previousState, formData) {
+async function createSession(formData) {
+
+    console.log('Form data ==>>>', formData);
+
     const email = formData.get('email');
     const password = formData.get('password');
 

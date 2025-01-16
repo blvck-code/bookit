@@ -3,14 +3,15 @@
 import Link from 'next/link';
 import { useEffect } from "react";
 import { useFormState } from "react-dom";
-import createSession from "@/app/actions/createSession";
+import { toast } from 'react-toastify'
+import createSession from "../actions/createSession";
 
 const LoginPage = () => {
     const [ state, formAction] = useFormState(createSession, {})
 
     useEffect(() => {
         if(state.error) {
-            console.log(state.error)
+            toast.error(state.error)
         }
     }, [state]);
 
