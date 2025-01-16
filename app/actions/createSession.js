@@ -2,8 +2,6 @@
 
 async function createSession(formData) {
 
-    console.log('Form data ==>>>', formData);
-
     const email = formData.get('email');
     const password = formData.get('password');
 
@@ -13,7 +11,9 @@ async function createSession(formData) {
         }
     }
 
-    console.log(email, password)
+    return {
+        success: true
+    }
 }
 
 export default createSession;
