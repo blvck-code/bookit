@@ -1,5 +1,5 @@
 'use server';
-import { createAdminClient } from "@/config/appwrite";
+import { createAdminClient } from "../../config/appwrite";
 import { redirect } from "next/navigation";
 
 async function getSingleRoom(id) {

@@ -1,33 +1,28 @@
 'use client';
-
+import React from "react";
 import Link from 'next/link';
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
-import { useFormState } from "react-dom";
+import {useEffect, useState} from "react";
 import { toast } from 'react-toastify'
 import createSession from "../actions/createSession";
 
 const LoginPage = () => {
-    const [ state, formAction] = useFormState(createSession, {});
+    const [state, formAction] = React.useActionState(createSession, {});
 
     const router = useRouter();
-    console.log('Current state ===>>', state)
 
     useEffect(() => {
-        console.log('Use effect')
-        if(state.error) {
-            toast.error(state.error)
-        }
-        if(state.success) {
-            toast.success('Logged in successfully.');
-            router.push('/')
+        if (state.error) toast.error(state.error);
+        if (state.success) {
+            toast.success('Logged in successfully!');
+            router.push('/');
         }
     }, [state]);
 
     return (
         <div className="flex items-center justify-center">
             <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-sm mt-20">
-                <form action={createSession}>
+                <form action={formAction}>
                     <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
                         Login
                     </h2>
