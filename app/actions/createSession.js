@@ -7,8 +7,7 @@ async function createSession(previousState, formData) {
     const email = formData.get('email');
     const password = formData.get('password');
 
-    console.log('Data email ==>>', email)
-    console.log('Data password ==>>', password)
+    console.log('Credentials ==>>>', email, password);
 
     if (!email || !password) {
         return {
@@ -41,7 +40,6 @@ async function createSession(previousState, formData) {
             error: 'Invalid Credentials',
         };
     }
-
 }
 
 export default createSession;
