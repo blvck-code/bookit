@@ -12,6 +12,7 @@ async function getAllRooms() {
             process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS
         );
         // Revalidate the cache for this path
+        revalidatePath('/', 'layout');
         return rooms;
     } catch (error) {
         console.log('Failed to get rooms ==>>', error);
