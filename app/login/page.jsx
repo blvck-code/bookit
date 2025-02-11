@@ -13,8 +13,6 @@ const LoginPage = () => {
     const router = useRouter();
 
     useEffect(() => {
-        console.log('State login ==>>', state)
-        console.log('State formAction ==>>', formAction)
         if (state.error) toast.error(state.error);
         if (state.success) {
             toast.success('Logged in successfully!');
